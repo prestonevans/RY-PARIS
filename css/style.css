@@ -67,6 +67,31 @@ header .logo {
 	text-align: center;
 	margin: 0 5%;
 }
+section {
+	padding: 2.5% 5%;
+}
+section h2 {
+	font-size: 3.5rem;
+	margin-bottom: .5em;
+}
+section p {
+	font-size: 1.35rem;
+	max-width: 875px;
+}
+.imgGallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 40px;
+}
+.imgGallery .img {
+	flex-basis: 346px;
+	height: 400px;
+	flex-grow: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 @media screen and (max-width: 845px) {
 	header nav {
 		display: flex;
