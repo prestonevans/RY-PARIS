@@ -84,26 +84,38 @@ section > p {
 .imgGallery {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	gap: 20px 40px;
 }
-.imgGallery .img,
-.imgGallery .card {
+.card {
 	flex-basis: 346px;
-	height: 400px;
 	flex-grow: 1;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 30px;
+}
+.card p {
+	text-align: center;
+	padding-top: .5em;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+}
+.img {
+	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: .3s ease-in-out;
 }
-.imgGallery .card {
-	display: flex;
-	flex-direction: column;
+.img:hover {
+	cursor: pointer;
+	transform: scale(1.1);
 }
-.card p {
-	align-self: center;
-	padding-top: .5em;
+.blue {
+	background-color: rgb(218, 223, 234);
 }
+/* media queries */
 @media screen and (max-width: 845px) {
 	header nav {
 		display: flex;
