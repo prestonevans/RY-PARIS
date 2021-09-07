@@ -17,19 +17,33 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 }
-header {
+header,
+footer {
 	background-color: rgb(241, 165, 54);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 5%;
+}
+header {
 	border-bottom: 4px solid white;
 }
-header nav a {
-	text-decoration: none;
+footer {
+	padding: 2.5% 5%;
+}
+a {
 	font-size: 1.25rem;
 	color: rgb(34, 25, 10);
 	font-weight: 600;
+	text-decoration: none;
+}
+footer nav a {
+	font-weight: 500;
+}
+footer nav a:hover {
+	color: rgb(255, 255, 255);
+}
+header nav a {
 	position: relative;
 	transition: color .2s ease-in-out;
 }
@@ -47,7 +61,8 @@ header nav a::after {
 header nav a:hover::after {
 	width: 80%;
 }
-header nav a:not(:last-child) {
+header nav a:not(:last-child),
+footer nav a:not(:last-child) {
 	margin-right: 1rem;
 }
 header .logo {
