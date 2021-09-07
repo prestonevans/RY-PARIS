@@ -74,23 +74,35 @@ section h2 {
 	font-size: 3.5rem;
 	margin-bottom: .5em;
 }
-section p {
+p {
 	font-size: 1.35rem;
+}
+section > p {
 	max-width: 875px;
+	margin-bottom: 2em;
 }
 .imgGallery {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 40px;
+	gap: 20px 40px;
 }
-.imgGallery .img {
+.imgGallery .img,
+.imgGallery .card {
 	flex-basis: 346px;
 	height: 400px;
 	flex-grow: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+.imgGallery .card {
+	display: flex;
+	flex-direction: column;
+}
+.card p {
+	align-self: center;
+	padding-top: .5em;
 }
 @media screen and (max-width: 845px) {
 	header nav {
