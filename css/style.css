@@ -77,10 +77,34 @@ header .logo {
 	bottom: 15vh;
 	padding: .25em .5em;
 	font-size: 3rem;
-	mix-blend-mode: color-dodge;
+	mix-blend-mode: lighten;
 	border-radius: .25em;
 	text-align: center;
 	margin: 0 5%;
+}
+.bottom {
+	display: flex;
+	flex-direction: column;
+}
+.details {
+	background-color: rgb(218, 223, 234);
+	padding: 2.5% 5%;
+}
+.row {
+	display: flex;
+}
+.row p {
+	flex-basis: 350px;
+}
+.row p:not(:last-child) {
+	margin-bottom: .5em;
+}
+.details h3 {
+	font-size: 2rem;
+	margin-bottom: .5em;
+}
+.bold {
+	font-weight: 700;
 }
 section {
 	padding: 5% 5%;
