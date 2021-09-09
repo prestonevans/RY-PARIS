@@ -118,6 +118,9 @@ section h2 {
 	flex-direction: column;
 	align-items: center;
 }
+.bengal h2 {
+	text-align: center;
+}
 .reviews {
 	margin-bottom: 2em;
 }
@@ -222,6 +225,8 @@ section:last-child .img {
 }
 .recipe {
 	display: flex;
+	gap: 10px;
+	font-size: 1.5rem;
 }
 .recipe .left {
 	flex-basis: 40%;
@@ -230,7 +235,24 @@ section:last-child .img {
 	flex-basis: 60%;
 }
 li {
-	list-style: inside;
+	list-style-position: inside;
+}
+ul li {
+	list-style-type: disc;
+}
+.recipe h4 {
+	text-indent: 1.2rem;
+	font-size: 1.5rem;
+}
+.recipe h3 {
+	margin-bottom: 1rem;
+	font-size: 3rem;
+}
+.recipe h4 {
+	margin-top: 1rem;
+}
+ol li {
+	margin-bottom: 1rem;
 }
 /* media queries */
 @media screen and (max-width: 845px) {
@@ -250,5 +272,8 @@ li {
 	}
 	header nav a:last-child {
 		margin-bottom: 1em;
+	}
+	.recipe {
+		flex-direction: column;
 	}
 }
