@@ -241,19 +241,30 @@ li {
 ul li {
 	list-style-type: disc;
 }
-.recipe h4 {
+.recipe h4,
+.subtitle {
+	display: block;
+	font-weight: 700;
 	text-indent: 1.2rem;
 	font-size: 1.5rem;
+	margin-top: 1rem;
 }
 .recipe h3 {
 	margin-bottom: 1rem;
 	font-size: 3rem;
 }
-.recipe h4 {
-	margin-top: 1rem;
-}
 ol li {
 	margin-bottom: 1rem;
+}
+iframe {
+	margin: 0 auto;
+	width: 500px;
+	height: 300px;
+}
+.video {
+	padding-top: 0;
+	display: flex;
+	justify-content: center;
 }
 /* media queries */
 @media screen and (max-width: 845px) {
