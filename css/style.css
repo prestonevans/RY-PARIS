@@ -121,6 +121,17 @@ section h2 {
 .reviews {
 	margin-bottom: 2em;
 }
+.noTop {
+	padding-top: 0;
+}
+.quotes {
+	font-size: 2.5rem;
+	color: rgb(87, 86, 86);
+	font-weight: 700;
+}
+.pad {
+	padding: 5% 10%;
+}
 .reviews i {
 	color: rgb(166, 50, 35);
 	font-size: 2rem;
