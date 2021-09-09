@@ -113,6 +113,46 @@ section h2 {
 	font-size: 3.5rem;
 	margin-bottom: .5em;
 }
+.bengal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.reviews {
+	margin-bottom: 2em;
+}
+.reviews i {
+	color: rgb(166, 50, 35);
+	font-size: 2rem;
+}
+.reviews span {
+	font-size: 2rem;
+	margin-left: 1em;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.circle {
+	height: 70px;
+	width: 70px;
+	border: thin solid;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.circle i {
+	font-size: 2rem;
+}
+.buttons button {
+	background-color: rgb(166, 50, 35);
+	color: rgb(255, 255, 255);
+	padding: 1em 3em;
+	border-radius: 2em;
+	font-size: 1.5rem;
+}
 p {
 	font-size: 1.35rem;
 }
