@@ -153,6 +153,12 @@ section h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: .3s ease-in-out;
+}
+.circle:hover {
+	background-color: rgb(204, 204, 204);
+	cursor: pointer;
+	border: none;
 }
 .circle i {
 	font-size: 2rem;
@@ -163,6 +169,11 @@ section h2 {
 	padding: 1em 3em;
 	border-radius: 2em;
 	font-size: 1.5rem;
+	transition: .3s ease-in-out;
+}
+.buttons button:hover {
+	cursor: pointer;
+	background-color: rgb(129, 38, 26);
 }
 p {
 	font-size: 1.35rem;
@@ -208,6 +219,18 @@ section > p {
 section:last-child .img {
 	border: 1rem solid rgb(218, 223, 234);
 	border-radius: 30px;
+}
+.recipe {
+	display: flex;
+}
+.recipe .left {
+	flex-basis: 40%;
+}
+.recipe .right {
+	flex-basis: 60%;
+}
+li {
+	list-style: inside;
 }
 /* media queries */
 @media screen and (max-width: 845px) {
